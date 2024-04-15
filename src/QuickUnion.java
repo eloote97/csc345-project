@@ -1,5 +1,6 @@
 // data structure for the Quick-Union implementation for Union-Find.
-// performs u
+// performs union on two elements by joining existing subtrees
+// starting at size 1 (element itself)
 public class QuickUnion {
 	private int count; // number of distinct sets
 	private int originalSize;
