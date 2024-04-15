@@ -1,3 +1,7 @@
+// Parker Hines
+// CSc 345
+// Project
+
 // data structure for the Quick-Union implementation for Union-Find.
 // performs union on two elements by joining existing subtrees
 // starting at size 1 (element itself)

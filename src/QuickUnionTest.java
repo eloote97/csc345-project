@@ -1,5 +1,9 @@
 import java.util.Scanner;
+//Parker Hines
+//CSc 345
+//Project
 
+// test file for QuickUnion data structure
 public class QuickUnionTest {
 	// takes input from user for size of n, then prompts user for two elements to
 	// union together. will output the current roots of p and q, and the resulting
