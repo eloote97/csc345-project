@@ -23,3 +23,19 @@ INSTRUCTIONS FOR QuickUnion.java TESTING CODE:
 8. Enter the first element to test connectivity.
 9. Enter the second element to test connectivity.
 10. Output will print the root of both elements, and connectivity results.
+
+
+WEIGHTED QUICK UNION W/ PATH COMPRESSION: Ths data structure operates just like weighted quick union
+but with the implementation of PATH COMPRESSION. Path compression involves determining if elements are
+of the same sets during the find function. This is performed by recursiveley making each element point
+to its root note if find() is called on this element. This makes future find() operations faster because
+the paths are shorter. Overall, the trees are flattened without changing the semantics of the sets.
+Regarding time complexity, find() and union() are significanty improved from O(n) time to O(α(n) time.
+α represents the inverse Ackermann function which essentially means that the time grows very very slowly
+even as n increases because the trees continue to remain very flat due to path compression. 
+
+INSTRUCTIONS FOR WeightedUnionPC.java TESTING CODE: 
+
+1. Run WeightedUnionPCTest.java
+2. Tests will run automatically
+3. Observe results and read the Notes
