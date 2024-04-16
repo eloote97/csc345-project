@@ -1,6 +1,21 @@
 # csc345-project
 union find
 
+QUICK-FIND: The QuickFind datastructure is a simple implementation of the Union-Find data structure. It
+represents a collection of sets, where each element belongs to exactly one set. The key operations are 
+find() and union(). Union has a worst case runtime of O(N) because it needs to update every object in a
+component. The expected case is also O(N) since the worst-case scenerio often occurs. The find() method
+returns the component identifier of the given element and has a time complexity of O(1).
+
+INSTRUCTIONS FOR QuickFindTest.java:
+
+1. Run QuickFindTest.java
+2. Enter size of the array
+3. Press Enter
+4. Enter 2 integers separated by a space to represent a pair of objects you want to union together (union(p,q)).
+5. Output will print the total number of components after the union call and the current state of the QuickFind
+   data structure.
+
 QUICK-UNION: The major difference between quick-find and quick-union is the efficiency of the union()
 and find() operations. The efficiency of the find() operations drops significantly from constant(O(1))
 to a runtime relative to the height of the tree. In the worst case, the tree can be extremely lopsided
