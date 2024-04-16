@@ -8,7 +8,7 @@
 public class QuickUnion {
 	private int count; // number of distinct sets
 	private int originalSize;
-	private int[] parents; // array structure. index value is the index of its parent
+	private int[] parents; // index value is the index of its parent
 
 	// constructor creates new quick union structure of size n
 	public QuickUnion(int n) {
@@ -82,6 +82,18 @@ public class QuickUnion {
 	// on each successful union
 	public int count() {
 		return this.count;
+	}
+	
+	public String toString() {
+		String output = "[ ";
+		for (int i = 0; i < originalSize; i++) {
+			output += Integer.toString(parents[i]);
+			if (i < originalSize - 1) {
+				output += ", ";
+			}
+		}
+		output += " ]";
+		return output;
 	}
 
 }
