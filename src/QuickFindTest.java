@@ -19,6 +19,7 @@ public class QuickFindTest {
                 // If so, print the pair of integers and the current number of components
                 System.out.println(p + " " + q);
                 System.out.println(qf.count() + " components");
+                printComponents(qf);
                 continue; // Skip the union
             }
 
@@ -28,8 +29,18 @@ public class QuickFindTest {
             // Print the pair of integers and the current number of components after the union operation
             System.out.println(p + " " + q);
             System.out.println(qf.count() + " components");
+            printComponents(qf);
         }
 
         scan.close();
+    }
+    
+    // Method to print all components
+    private static void printComponents(QuickFind qf) {
+        System.out.println("Components:");
+        for (int i = 0; i < qf.id.length; i++) {
+            System.out.print(qf.id[i] + " ");
+        }
+        System.out.println();
     }
 }

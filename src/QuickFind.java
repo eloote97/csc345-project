@@ -3,7 +3,7 @@
 // Project
 
 public class QuickFind {
-	private int[] id;   //id[i] = component identifier of i
+	int[] id;   //id[i] = component identifier of i
 	private int count;  // number of components
 	
 	// Constructor: Initializes QuickFind with N elements.
