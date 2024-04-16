@@ -17,8 +17,9 @@ INSTRUCTIONS FOR QuickUnion.java TESTING CODE:
 3. Enter the first element to be unioned.
 4. Enter the second element to be unioned.
 
-5. Output will print the root of both elements, and the result of the union.
+5. Output will print the root of both elements, and union results.
 6. Repeat steps 3 and 4 to perform as many unions as desired.
 7. Enter a sentinel value of (-1) to indicate you're done performing unions.
 8. Enter the first element to test connectivity.
 9. Enter the second element to test connectivity.
+10. Output will print the root of both elements, and connectivity results.
