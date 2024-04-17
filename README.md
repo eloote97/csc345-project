@@ -49,8 +49,22 @@ Regarding time complexity, find() and union() are significanty improved from O(n
 α represents the inverse Ackermann function which essentially means that the time grows very very slowly
 even as n increases because the trees continue to remain very flat due to path compression. 
 
+INSTRUCTIONS FOR WeightedUnionTest.java:
+
+1. Tests the WeightedUnion logic.
+2. Works exactly the same as the test for QuickUnion.
+3. The difference is after test, it will print an array of sizes of each tree/subtree after the number of sets/trees.
+4. To interpret the sizes, compare the newly printed array side by side with the array of trees
+5. Example: Final array of trees: [0, 2, 8, 3, 4, 2, 8, 8, 8, 8] ,    Array of sizes printed: [1, 1, 3, 1, 1, 1, 1, 1, 7, 1].
+    Example of how to analyze:
+   - At index 1 and 5, they are nodes with number 1 and number 2, whose common parent is a node with number 2. Both of the nodes are subtrees of size/weight 1 (they have no children).
+   - At index 2, number 2 is connected to a parent with nummber 8 and is of size 3 (number 2 has two children, 1 and 5)
+   - At index 8, number 8 has a parent that is itself and the tree at that position is of size 7 (having 7 children total, including the other tree of size 3). Thus, 8 is also the root of the big tree.
+      
+
 INSTRUCTIONS FOR WeightedUnionPC.java TESTING CODE: 
 
 1. Run WeightedUnionPCTest.java
 2. Tests will run automatically
 3. Observe results and read the Notes
+         
